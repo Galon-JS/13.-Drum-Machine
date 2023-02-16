@@ -60,7 +60,7 @@ class DrumPad extends Component {
 
     return (
       <button
-        className="drum-pad"
+        className="drum-pad fill"
         id={audioId}
         type="btn"
         onClick={this.playAudio}

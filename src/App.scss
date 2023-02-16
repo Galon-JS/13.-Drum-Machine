@@ -15,28 +15,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* -------------------------------------------------------- */
-/* Mixins & Media Queries */
 @mixin phoneSize {
   @media (max-width: 640px) {
     @content;
   }
 }
 
-//@mixin tabletSize {
-//  @media (min-width: 641px) and (max-width: 1023px) {
-//    @content;
-//  }
-//}
-
-//@mixin desktopSize {
-//  @media (min-width: 1024px) {
-//    @content;
-//  }
-//}
-
-/* -------------------------------------------------------- */
-/* App component */
 #container-app {
   background-color: #7190a8;
   color: #fff;
@@ -45,7 +29,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* ----- TITLE ----- */
   #main-title {
     font-size: 2.4rem;
     font-weight: 400;
@@ -54,7 +37,6 @@ body {
       font-size: 2rem;
     }
   }
-  /* ----- DRUM-MACHINE ----- */
   #drum-machine {
     background-color: #b8d1e5;
     width: 650px;
@@ -66,7 +48,6 @@ body {
       width: 500px;
       padding: 15px;
     }
-    /* ----- PAD ----- */
     #container-pad {
       display: grid;
       grid-template-columns: 90px 90px 90px;
@@ -81,7 +62,6 @@ body {
         grid-gap: 3px 3px;
         padding: 15px;
       }
-      /* ----- DRUM-PAD ----- */
       .drum-pad {
         height: 80px;
         width: 80px;
@@ -98,7 +78,6 @@ body {
         }
       }
     }
-    /* ----- CONTROLS CONTAINER ----- */
     #container-controls {
       display: flex;
       flex-direction: column;
@@ -108,7 +87,6 @@ body {
       @include phoneSize {
         padding: 15px;
       }
-      /* ----- SUBCONTROLS CONTAINER ----- */
       #container-subcontrols {
         display: flex;
         align-items: center;
@@ -120,19 +98,14 @@ body {
             font-size: 1.15rem;
           }
         }
-        /* ----- POWER & MODE CONTAINER ----- */
         #power-control,
         #mode-control {
           padding: 0 10px;
         }
       }
-      /* ----- SWITCH POWER & MODE ----- */
-      /* See below! */
-      /* ----- DISPLAY ----- */
       #display {
         background-color: #000;
         border: 2px solid #7190a8;
-        //border: 2px solid #ffa600;
         width: 150px;
         height: 50px;
         display: flex;
@@ -149,7 +122,6 @@ body {
       }
     }
   }
-  /* ----- FOOTER ----- */
   footer {
     a {
       display: inline-block;
@@ -167,8 +139,6 @@ body {
   }
 }
 
-/* -------------------------------------------------------- */
-/* Switch components */
 .switch-container {
   background-color: silver;
   width: 60px;
@@ -249,9 +219,6 @@ i::before {
 input {
   display: none;
 }
-/* -------------------------------------------------------- */
-
-/* Volume components */
 .volume-container {
   background-color: #2a2a2a;
   width: 150px;
@@ -270,7 +237,6 @@ input {
 }
 
 #vol-slider {
-  //same has 'input[type='range']'
   -webkit-appearance: none;
   appearance: none;
   outline: none;
@@ -280,7 +246,6 @@ input {
 }
 
 #vol-slider::-webkit-slider-thumb {
-  //input[type=range]::-webkit-slider-thumb
   -webkit-appearance: none;
   appearance: none;
   background-color: #104e92;
