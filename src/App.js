@@ -3,7 +3,6 @@ import Pad from "./components/pad";
 import Controls from "./components/controls";
 import "./App.css";
 
-// See: https://forum.freecodecamp.org/t/drum-machine-sound-urls/231516/2
 const modeOne = [
   {
     keyTrigger: "Q",
@@ -187,8 +186,8 @@ class App extends Component {
           />
         </div>
         <footer>
-          <a href="https://codepen.io/new_life/full/wvebydP" target="_blank">
-            &copy; Developed by Paulo Fidalgo
+          <a href="https://codepen.io/new_life/full/wvebydP" target="_blank" rel="noreferrer">
+            &copy; Developed by Galon-JS
           </a>
         </footer>
       </div>
