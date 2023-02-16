@@ -35,7 +35,7 @@
   background-color: hsl(0, 0%, 0%, 0.9);
   width: 650px;
   padding: 50px;
-  border: 3px solid #517089;
+  outline: 10px  ridge hsla(0, 0%, 12%, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,8 +46,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* ----- PAD ----- */
-  /* ----- CONTROLS CONTAINER ----- */
 }
 
 @media (max-width: 640px) {
@@ -72,7 +70,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 25px;
-  /* ----- DRUM-PAD ----- */
 }
 
 @media (max-width: 640px) {
@@ -118,10 +115,6 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 25px;
-  /* ----- SUBCONTROLS CONTAINER ----- */
-  /* ----- SWITCH POWER & MODE ----- */
-  /* See below! */
-  /* ----- DISPLAY ----- */
 }
 
 @media (max-width: 640px) {
@@ -140,7 +133,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* ----- POWER & MODE CONTAINER ----- */
 }
 
 #container-app #drum-machine #container-controls #container-subcontrols p {
@@ -205,8 +197,6 @@
           transform: translateY(0.5rem);
 }
 
-/* -------------------------------------------------------- */
-/* Switch components */
 .switch-container {
   background-color: silver;
   width: 60px;
@@ -292,11 +282,9 @@ input {
   display: none;
 }
 
-/* -------------------------------------------------------- */
-/* Volume components */
 .volume-container {
   background-color: #2a2a2a;
-  width: 150px;
+  width: 140px;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,11 +296,13 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 4px;
+  outline: 5px ridge hsla(0, 0%, 12%, 0.9);
+
 }
 
 #vol-icon {
   width: 22px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 4px;
   color: #fff;
 }
@@ -323,7 +313,7 @@ input {
        appearance: none;
   outline: none;
   width: 164px;
-  height: 4px;
+  height: 42px;
   background: -webkit-gradient(linear, left top, right top, from(green), color-stop(yellow), color-stop(red), to(#fff));
   background: linear-gradient(90deg, green, yellow, red, #fff);
 }
@@ -337,4 +327,3 @@ input {
   border: 1px solid #000;
   cursor: pointer;
 }
-/*# sourceMappingURL=App.css.map */

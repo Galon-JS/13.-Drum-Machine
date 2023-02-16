@@ -37,7 +37,7 @@ class Controls extends Component {
           </div>
         </div>
         <div class="volume-container">
-          <i class="fas fa-volume-down" id="vol-icon" />
+          <i class="vol" id="vol-icon" />
           <input
             type="range"
             id="vol-slider"
